@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentConfig">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_config"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category management" />
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile management" />
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Import/Export" />
+        </com.google.android.material.tabs.TabLayout>
+        <FrameLayout
+            android:id="@+id/fragmentcontainer_config"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/my_nav_view"
+            android:layout_below="@+id/heading_main"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"></FrameLayout>
+
+</LinearLayout>

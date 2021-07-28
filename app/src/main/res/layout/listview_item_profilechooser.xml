@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/colorPrimary">
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:src="@drawable/ic_baseline_check_circle_24" />
+
+    <TextView
+        android:id="@+id/profiletext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        style="@style/textviewHeadingTitle"
+        android:text="Yes"/>
+
+    <Button
+        android:id="@+id/item_btn_setprofile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="@drawable/style_btn_bg"
+        android:text="Use This"/>
+
+</LinearLayout>

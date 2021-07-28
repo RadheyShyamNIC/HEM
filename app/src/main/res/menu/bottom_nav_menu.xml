@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="DashBoard"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:id="@+id/nav_new"
+        android:title="NewEntry"
+        android:icon="@drawable/ic_baseline_add_box_24"/>
+    <item
+        android:id="@+id/nav_report"
+        android:title="Report"
+        android:icon="@drawable/ic_baseline_chrome_reader_mode_24"/>
+    <item
+        android:id="@+id/nav_config"
+        android:title="Manage"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+</menu>
