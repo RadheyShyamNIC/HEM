@@ -273,7 +273,8 @@ public class FragmentNewentry extends Fragment {
             row_view_attached_image.setVisibility(View.GONE);
             row_attach_image.setVisibility(View.VISIBLE);
         }
-        editText_description.setText("");
+        editText_amount.setText("");
+        //editText_description.setText("");
         refreshListView();
     }
 
@@ -293,7 +294,7 @@ public class FragmentNewentry extends Fragment {
         Bitmap resizedImage = thumbnail;
         //Bitmap resizedImage = new ImageOperation().CompressResizeImage(thumbnail);
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-        resizedImage.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
+        resizedImage.compress(Bitmap.CompressFormat.PNG, 100, bytes);
         imageByteArray = bytes.toByteArray();
         Toast.makeText(getContext(), "Image Captured and compressed Successfully", Toast.LENGTH_SHORT).show();
     }
