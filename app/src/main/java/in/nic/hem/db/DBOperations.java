@@ -493,7 +493,7 @@ public class DBOperations {
                 "from expenditure_transaction et " +
                 "inner join mas_expenditure_type met ON et.category_id = met.id  AND et.profile_id = met.profile_id " +
                 "inner join profile p ON p.id = et.profile_id " +
-                "WHERE p.isdefault=1 AND et.transaction_date>= date('now', 'start of year','-1 month') AND et.transaction_date <date('now', 'start of year') ";
+                "WHERE p.isdefault=1 AND et.transaction_date>= date('now', 'start of year','-1 year') AND et.transaction_date <date('now', 'start of year') ";
         db = dataBaseHelper.getDB_Connection();
         try
         {
@@ -786,7 +786,7 @@ public class DBOperations {
         }if(amount2.length()>0){
             filter_query = filter_query + " AND et.expenditure_amount <= "+amount2;
         }if(description.length()>0){
-            filter_query = filter_query + " AND et.description LIKES '%"+description+"%'";
+            filter_query = filter_query + " AND et.description LIKE '%"+description+"%'";
         }if(attachment_filter.equals("Yes")){
             filter_query = filter_query + " AND et.image_attachment_id is not NULL";
         }else if(attachment_filter.equals("No")){
